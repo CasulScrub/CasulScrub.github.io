@@ -11,13 +11,14 @@
   width: 300px; /* Set a fixed width for the game card */
 }
 
-.video-wrapper {
+.video-container {
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+  margin-bottom: 10px;
 }
 
-.video-wrapper iframe {
+.video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,8 +27,21 @@
 }
 
 .game-card h2,
-.game-card p,
-.game-card a {
+.game-card p {
   color: #fff;
   text-align: center;
+}
+
+.wishlist-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-button:hover {
+  background-color: #2980b9;
 }
