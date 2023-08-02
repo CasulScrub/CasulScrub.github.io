@@ -3,7 +3,7 @@ body {
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background color */
+    background-color: #1a1a1a; /* Dark background color */
     color: #00ff00; /* Green text color */
 }
 
@@ -55,7 +55,7 @@ a {
 
 .game-card {
     width: 300px;
-    background-color: #000; /* Black background color for game cards */
+    background-color: #1a1a1a; /* Dark background color for game cards */
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -82,81 +82,3 @@ a {
 
 .game-card a {
     display: inline-block;
-    margin-top: 15px;
-    padding: 8px 16px;
-    background-color: #00ff00; /* Green button color */
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* About Us Styles */
-.about {
-    background-color: #000; /* Black background color for About section */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 36px;
-    color: #00ff00; /* Green text color for section heading */
-    margin-bottom: 20px;
-}
-
-.about p {
-    color: #fff; /* White text color for About section text */
-}
-
-.about img {
-    width: 100%; /* Adjust image width to fit the section */
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Contact Form Styles */
-.contact {
-    background-color: #000; /* Black background color for Contact section */
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 36px;
-    color: #00ff00; /* Green text color for section heading */
-    margin-bottom: 20px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.contact input,
-.contact textarea {
-    background-color: #000; /* Black background color for form fields */
-    color: #00ff00; /* Green text color for form fields */
-    border: 2px solid #00ff00; /* Green border for form fields */
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 8px 12px;
-}
-
-.contact textarea {
-    resize: none;
-}
-
-.contact button {
-    background-color: #00ff00; /* Green button color for form submit button */
-    color: #000;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-}
-
-.contact button:hover {
-    background-color: #005500; /* Darker green button color on hover */
-}
