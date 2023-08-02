@@ -1,0 +1,40 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Banner Styles */
+.hero {
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Game Showcases Styles */
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-card {
+    /* Styling for individual game cards or thumbnails */
+}
+
+/* About Us Styles */
+.about {
+    /* Styling for the about section */
+}
+
+/* Contact Form Styles */
+.contact {
+    /* Styling for the contact form */
+}
