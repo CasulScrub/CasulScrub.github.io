@@ -1,14 +1,19 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light background color */
+    background-color: #000; /* Black background color */
+    color: #00ff00; /* Green text color */
+}
+
+a {
+    color: #00ff00; /* Green color for links */
 }
 
 /* Hero Banner Styles */
 .hero {
-    background-image: url('path/to/hero-image.jpg');
+    background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1308960/header.jpg?t=1627918481');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -16,32 +21,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
-}
-
-.hero img {
-    width: 200px; /* Adjust logo size */
 }
 
 .hero h1 {
     font-size: 40px;
     margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for a retro effect */
 }
 
 .scroll-button {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 24px;
-    background-color: #ff8080; /* Pastel button color */
-    color: #fff;
+    background-color: #00ff00; /* Green button color */
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .scroll-button:hover {
-    background-color: #ff5050; /* Lighter button color on hover */
+    background-color: #005500; /* Darker green button color on hover */
 }
 
 /* Game Showcases Styles */
@@ -54,63 +55,75 @@ body {
 
 .game-card {
     width: 300px;
-    background-color: #f0f0f0; /* Light background color for game cards */
+    background-color: #000; /* Black background color for game cards */
     padding: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out; /* CSS animation for hover effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
 }
 
 .game-card img {
-    width: 200px; /* Adjust game image size */
+    width: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .game-card h2 {
     font-size: 24px;
-    color: #333; /* Text color for game title */
+    color: #00ff00; /* Green text color for game title */
     margin-bottom: 10px;
 }
 
 .game-card p {
-    color: #666; /* Text color for game description */
+    color: #fff; /* White text color for game description */
 }
 
 .game-card a {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 16px;
-    background-color: #ff8080; /* Pastel button color */
-    color: #fff;
+    background-color: #00ff00; /* Green button color */
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.game-card a:hover {
-    background-color: #ff5050; /* Lighter button color on hover */
-}
-
 /* About Us Styles */
 .about {
-    background-color: #ffcc80; /* Pastel background color */
-    padding: 50px;
+    background-color: #000; /* Black background color for About section */
+    padding: 50px 0;
     text-align: center;
 }
 
+.about h2 {
+    font-size: 36px;
+    color: #00ff00; /* Green text color for section heading */
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #fff; /* White text color for About section text */
+}
+
 .about img {
-    width: 300px; /* Adjust About Us image size */
-    border-radius: 5px;
+    width: 100%; /* Adjust image width to fit the section */
+    border-radius: 10px;
     margin-top: 20px;
 }
 
 /* Contact Form Styles */
 .contact {
-    background-color: #d1f9f9; /* Pastel background color */
-    padding: 50px;
+    background-color: #000; /* Black background color for Contact section */
+    padding: 50px 0;
     text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #00ff00; /* Green text color for section heading */
+    margin-bottom: 20px;
 }
 
 .contact form {
@@ -120,17 +133,30 @@ body {
     margin: 0 auto;
 }
 
-.contact form input,
-.contact form textarea,
-.contact form button {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+.contact input,
+.contact textarea {
+    background-color: #000; /* Black background color for form fields */
+    color: #00ff00; /* Green text color for form fields */
+    border: 2px solid #00ff00; /* Green border for form fields */
     border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
 }
 
-.contact form button {
-    background-color: #ff8080; /* Pastel button color */
-    color: #fff;
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    background-color: #00ff00; /* Green button color for form submit button */
+    color: #000;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #005500; /* Darker green button color on hover */
 }
