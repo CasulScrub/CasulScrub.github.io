@@ -41,6 +41,22 @@ body {
   background: #ffc436;
 }
 
+/* Button styles */
+.button {
+  display: inline-block;
+  background: #ffcd42;
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px); /* Adjust the value as needed */
+}
+
 /* Game Showcase styles */
 .games {
   padding: 60px 0;
@@ -113,4 +129,21 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: bold;
 }
