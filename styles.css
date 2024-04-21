@@ -98,3 +98,19 @@ body {
 .wishlist-button:hover {
   background: #ffc436;
 }
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.contact-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

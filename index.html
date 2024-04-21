@@ -11,12 +11,17 @@
 		<h1>Welcome to Casul Game Studio LLC</h1>
         <img src="casullogo.png" alt="Casul Game Studio Logo">
         
-        <a href="#games" class="scroll-button">Discover Our Games</a>
+        <div class="button-container">
+			<a href="#games" class="scroll-button click-sound hover-sound">Discover Our Games</a>
+			<a href="#contact" class="scroll-button click-sound hover-sound">Contact Us</a>
+		</div>
+		
     </header>
 
     <!-- Game Showcases Section -->
     <section id="games" class="games">
-        <div class="game-card">
+        <div class="game-card click-sound hover-sound">
+		
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Tc6jOqIv0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -27,7 +32,8 @@
             </div>
         </div>
 
-        <div class="game-card">
+        <div class="game-card click-sound hover-sound">
+		
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/F8dZEYh9f2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -42,6 +48,55 @@
         <!-- ... (more placeholders for additional games) ... -->
     </section>
 
+	<section id="contact">
+	
+    <h2>Contact Us</h2>
+		<div class="contact-info">
+		<p>If you have any questions or inquiries, please feel free to reach out to us via email:</p>
+		<p>Email: casulgamestudio@gmail.com</p>
+	</section>
+	
+	
     <!-- ... (remaining code) ... -->
+	
+	<script>
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+
+               document.querySelector(this.getAttribute('href')).scrollIntoView({
+                   behavior: 'smooth'
+               });
+           });
+       });
+   </script>
+   
+   <script>
+    // Get the elements to add hover and click sounds to
+    var hoverElements = document.querySelectorAll('.hover-sound');
+    var clickElements = document.querySelectorAll('.click-sound');
+
+    // Attach event listeners
+    hoverElements.forEach(function(element) {
+        element.addEventListener('mouseover', playHoverSound);
+    });
+
+    clickElements.forEach(function(element) {
+        element.addEventListener('click', playClickSound);
+    });
+
+    // Function to play hover sound
+    function playHoverSound() {
+        var hoverAudio = new Audio('hover-sound.mp3');
+        hoverAudio.play();
+    }
+
+    // Function to play click sound
+    function playClickSound() {
+        var clickAudio = new Audio('click-sound.mp3');
+        clickAudio.play();
+    }
+</script>
+   
 </body>
 </html>
